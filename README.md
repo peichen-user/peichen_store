@@ -1,24 +1,7 @@
 # uploader_demo
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+起了服务之后可以用手机访问电脑 ip 用外部浏览器打开页面。上传图片功能，现在无论是安卓手机还是 ios 都会调起相机拍照功能
+但是需求是：上传照片时只能从相册选择，不要出现相机拍照这个功能。
+目前我用的是 vant 组件库的 van-uploader 这个底层是用的<input type="file">
+我尝试过很多方法，accept、capture 两个参数也尝试改过搭配没有实现
+也想过通过 display:none 将相机那个选项给隐藏掉，但是没有找到对应的选项样式。
